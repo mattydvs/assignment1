@@ -1,2 +1,2 @@
-#Assignment 1
+# Assignment 1
 This assignment is to check out github.
