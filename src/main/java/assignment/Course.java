@@ -52,6 +52,8 @@ public class Course {
     public boolean removeModule(Module module){
         return cModules.remove(module);
     }
+    
+    // add the modules
     public void addModule(Module module){
         cModules.add(module);
     }
