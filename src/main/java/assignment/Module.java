@@ -8,8 +8,6 @@ public class Module
 {
 	private String name;
 	private int id;
-	private List<Student> mStudents;
-	private List<Course> mCourses;
 	
 
 	public Module(String module_name, int id) {
@@ -34,34 +32,7 @@ public class Module
 		this.name = name;
 	}
 
-	public void setStudents(List<Student> students) {
-		this.mStudents = students;
-	}
-
-	public void setCourses(List<Course> courses) {
-		this.mCourses = courses;
-	}
-
 	public int getID() {
 		return this.id;
 	}
-
-	public List<Student> getStudents() {
-		return this.mStudents;
-	}
-	
-	
-	public List<Course> getCourses() {
-		return this.mCourses;
-	}
-	
-	//Mutators
-	public void addStudents(ArrayList<Student> students) {
-		this.mStudents.addAll(students);
-	}
-
-	public void addCourses(ArrayList<Course> courses) {
-		this.mCourses.addAll(courses);
-	}
-
 }

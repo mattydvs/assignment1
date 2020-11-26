@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Course {
     private String name;
-    private List<Module> cModules=new ArrayList<Module>();
+    private List<Module> modules=new ArrayList<Module>();
     private List<Student> cStudents=new ArrayList<Student>();
     private LocalDate startDate;
     private LocalDate endDate;
@@ -15,6 +15,7 @@ public class Course {
         this.name = name;
         this.startDate=startDate;
         this.endDate=endDate;
+        this.modules = modules;
     }
 
 	//setters
@@ -22,7 +23,7 @@ public class Course {
         this.name = name;
     }
     public void setModules(List<Module> modules) {
-        this.cModules = modules;
+        this.modules = modules;
     }
     public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
@@ -36,7 +37,7 @@ public class Course {
         return name;
     }
     public List<Module> getModules() {
-        return cModules;
+        return modules;
     }
     public LocalDate getStartDate() {
         return startDate;
@@ -50,12 +51,12 @@ public class Course {
     
     //mutators
     public boolean removeModule(Module module){
-        return cModules.remove(module);
+        return modules.remove(module);
     }
     
     // add the modules
     public void addModule(Module module){
-        cModules.add(module);
+        modules.add(module);
     }
     
     public boolean removeStudent(Student student) {

@@ -7,13 +7,14 @@ public class Student {
     private int DOB;
     private int ID;
     private int age;
-    private ArrayList<Course> sCourses;
+    private ArrayList<Course> courses;
 
     public Student(String name, int DOB, int age, int ID){
         this.name=name;
         this.DOB=DOB;
         this.ID=ID;
         this.age=age;
+        this.courses = courses;
     }
 
     //setters
@@ -27,7 +28,7 @@ public class Student {
         this.ID = ID;
     }
     public void setCourses(ArrayList<Course> courses) {
-        this.sCourses = courses;
+        this.courses = courses;
     }
 
     //getters
@@ -41,7 +42,7 @@ public class Student {
         return ID;
     }
     public ArrayList<Course> getCourses() {
-        return sCourses;
+        return courses;
     }
 
     public int getAge() {
@@ -54,10 +55,10 @@ public class Student {
 
     //mutators
     public void addCourse(Course course){
-        sCourses.add(course);
+        courses.add(course);
     }
     public boolean removeCourse(Course course){
-        return sCourses.remove(course);
+        return courses.remove(course);
     }
 
 }
