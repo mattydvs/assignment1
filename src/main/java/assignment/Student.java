@@ -3,11 +3,11 @@ package assignment;
 import java.util.ArrayList;
 
 public class Student {
-    public String name;
-    public int DOB;
-    public int ID;
-    public int age;
-    public ArrayList<Course> sCourses;
+    private String name;
+    private int DOB;
+    private int ID;
+    private int age;
+    private ArrayList<Course> sCourses;
 
     public Student(String name, int DOB, int age, int ID){
         this.name=name;
